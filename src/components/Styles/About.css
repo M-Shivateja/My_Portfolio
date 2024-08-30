@@ -1,0 +1,103 @@
+/* General Styles */
+.info {
+  margin: 60px 20px 45px 20px;
+  text-align: center;
+  padding: 30px;
+  color: #f0f0f0;
+  background-color: rgba(0, 0, 0, 0.247);
+  border-radius: 30px;
+  border: 0.2px solid rgba(248, 248, 255, 0.183);
+}
+
+.info h2 {
+  font-size: 2em;
+  color: #fff;
+  font-family: "Comic Sans MS", sans-serif;
+}
+
+.info p {
+  font-size: 1.2em;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: justify;
+}
+
+/* Flexbox container for the cards */
+#mycol {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-right: 10px;
+}
+
+/* Styles for individual cards */
+#mycol .card {
+  background-color: #33333374;
+  color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  flex: 1 1 calc(50% - 20px);
+  margin: 10px;
+  max-width: calc(50% - 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Ensure cards stack vertically on smaller screens */
+@media (max-width: 768px) {
+  #mycol {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #mycol .card {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+/* Styles for images inside cards */
+#mycol .card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+#mycol .card img:hover {
+  transform: scale(1.05);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .info {
+    padding: 20px;
+  }
+
+  .info h2 {
+    font-size: 1.8em;
+  }
+
+  .info p {
+    font-size: 1.1em;
+  }
+
+  .info .card {
+    padding: 15px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .info h2 {
+    font-size: 2.5em;
+  }
+
+  .info p {
+    font-size: 1.4em;
+  }
+
+  .info .card {
+    padding: 25px;
+  }
+}

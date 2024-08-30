@@ -1,0 +1,150 @@
+/* Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
+  padding: 10px 20px 0px 20px;
+  position: relative;
+}
+
+/* Name link styling */
+.myName a {
+  color: rgb(255, 255, 255);
+  letter-spacing: 5px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.myName a span {
+  padding: 2px 4px 2px 15px;
+
+  background: linear-gradient(
+    to bottom right,
+    #000000,
+    #292a2b,
+    #2e2e2e,
+    #333636,
+    #1d2121,
+    #040404
+  );
+  box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.226);
+  border-radius: 5px;
+  border-color: aliceblue;
+  display: inline-block;
+  color: white;
+}
+
+.myName a span:hover {
+  border-radius: 10px;
+  transition: all 0.1s ease-in-out;
+}
+
+/* Menu icon styling */
+.menu-icon {
+  display: none;
+  font-size: 2em;
+  cursor: pointer;
+  color: rgb(251, 251, 251);
+}
+
+/* Links styling */
+.mylinks {
+  display: flex;
+  gap: 30px;
+  border: 0.3px solid rgba(255, 255, 255, 0.171);
+  padding: 4px 10px;
+  border-radius: 12px;
+  background: #2e2e2e6d;
+}
+
+.mylinks a {
+  padding: -4px 5px;
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 0.5em;
+  transition: transform 0.3s ease;
+}
+
+.mylinks a:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgba(105, 105, 105, 0.372);
+  border-radius: 16px;
+  transform: scale(1.1);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .mylinks {
+    display: none;
+    position: absolute;
+    top: 5vh;
+    right: 19px;
+    background-color: rgba(38, 38, 38, 0.724);
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 152px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: -16px;
+    text-align: center;
+  }
+
+  .mylinks a {
+    padding: 10px;
+    font-size: 1.2em;
+    margin-left: 2px;
+  }
+  .myName a {
+    font-size: 1.2em;
+  }
+  .navbar.active .mylinks {
+    display: flex;
+  }
+}
+
+/* Larger screens */
+@media (min-width: 768px) {
+  .navbar {
+    padding: 0 50px;
+  }
+
+  .myName a {
+    letter-spacing: 8px;
+    font-size: 1.3em;
+  }
+
+  .mylinks a {
+    font-size: 1.1em;
+    padding: 5px 15px;
+    margin-left: 2px;
+  }
+
+  .mylinks {
+    gap: 50px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbar {
+    padding: 20px 100px 0px 100px;
+  }
+
+  .myName a {
+    letter-spacing: 10px;
+    font-size: 1.3em;
+  }
+
+  .mylinks a {
+    font-size: 1.1em;
+    padding: 8px 20px;
+    margin-left: 2px;
+  }
+
+  .mylinks {
+    gap: 70px;
+  }
+}

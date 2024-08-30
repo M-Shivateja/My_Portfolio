@@ -1,0 +1,33 @@
+/* Reset margins and paddings for all elements */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Ensure html, body, and #root take up the full height of the viewport */
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the body takes full height of the viewport */
+  background: linear-gradient(
+    109.6deg,
+    rgb(36, 45, 57) 11.2%,
+    rgb(16, 37, 60) 51.2%,
+    rgb(0, 0, 0) 98.6%
+  );
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+
+.main-content {
+  flex: 1; /* Allows the main content area to expand and push footer to the bottom */
+}
