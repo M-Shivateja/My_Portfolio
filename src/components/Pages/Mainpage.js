@@ -91,7 +91,7 @@ function Main() {
           </div>
           <div class="project-card">
             <img src="http://surl.li/pgsqhk" alt="Project 4" />
-            <h3>My Protfolio</h3>
+            <h3>My Portfolio</h3>
             <p>this project is built using react.js and Css</p>
             <a
               href="https://github.com/M-Shivateja/SecureSignIn"
