@@ -51,7 +51,7 @@ function Projects() {
             alt="Project 3"
             rel="noopener noreferrer"
           />
-          <h3>My Protfolio</h3>
+          <h3>My Portfolio</h3>
           <p>this project is built using react.js and Css</p>
           <a href="https://github.com/M-Shivateja/SecureSignIn">View Project</a>
         </div>
