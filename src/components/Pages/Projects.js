@@ -53,7 +53,7 @@ function Projects() {
           />
           <h3>My Portfolio</h3>
           <p>this project is built using react.js and Css</p>
-          <a href="https://github.com/M-Shivateja/SecureSignIn">View Project</a>
+          <a href="https://github.com/M-Shivateja/My_Portfolio">View Project</a>
         </div>
       </div>
     </div>
